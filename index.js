@@ -1,16 +1,46 @@
 var flag = false;
 var lastOpen = 'none';
-// var mydata = JSON.parse(window.data);
-// alert(mydata[0].name);
-// alert(mydata[0].age);
-// alert(mydata[1].name);
-// alert(mydata[1].age);
+
+var data = {
+    "1": {
+        "name": "Остров 1",
+        "Description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "5",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    },
+    "2": {
+        "name": "Остров 2",
+        "description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "3",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    },
+    "3": {
+        "name": "Остров 3",
+        "description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "1",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    },
+    "4": {
+        "name": "Остров 4",
+        "description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "5",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    },
+    "5": {
+        "name": "Остров 5",
+        "description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "76",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    }
+}
+
+
 DivObject = function(name) {
     if (flag == false){
         this.div = document.createElement("div");
         document.body.appendChild( this.div ) ;
         this.div.className = "panel" ;
-        this.div.innerHTML = name;
+        this.div.innerHTML = data[name]["name"] + '<br/>' + data[name]["description"] + '<br/>' + data[name]["price"] + '<br/>' + data[name]["link"];
         flag = true;
         lastOpen = name;
     }else{
@@ -27,7 +57,7 @@ DivObject = function(name) {
             this.div = document.createElement("div");
             document.body.appendChild( this.div ) ;
             this.div.className = "panel" ;
-            this.div.innerHTML = name;
+            this.div.innerHTML = data[name]["name"] + '<br/>' + data[name]["description"] + '<br/>' + data[name]["price"] + '<br/>' + data[name]["link"];
             flag = true;
             lastOpen = name;
         }

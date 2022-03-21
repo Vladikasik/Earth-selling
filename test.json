@@ -1,1 +1,32 @@
-data = '[{"name" : "Ashwin", "age" : "20"},{"name" : "Abhinandan", "age" : "20"}]';
+data = '{
+    "1": {
+        "name": "Остров 1",
+        "Description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "5",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    },
+    "2": {
+        "name": "Остров 2",
+        "Description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "3",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    },
+    "3": {
+        "name": "Остров 3",
+        "Description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "1",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    },
+    "4": {
+        "name": "Остров 4",
+        "Description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "5",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    },
+    "5": {
+        "name": "Остров 5",
+        "Description": "Описание обычного красивого острова<br/>Этот остров красивый",
+        "price": "76",
+        "link": "t.me/vladislav_ain_bot?start=1"
+    }
+}';
